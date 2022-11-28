@@ -1,0 +1,65 @@
+/* SIGUP CSS */
+.inputBox {
+    margin: 25px;
+    display: block;
+    padding: 7px;
+    width: 300px;
+    border: 1px solid #FCA311;
+}
+
+.register {
+    margin-left: 30%;
+}
+
+.signup-btn {
+    margin: 25px;
+    padding: 10px;
+    width: 150px;
+    background-color: #FCA311;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+
+/* Login CSS */
+
+/* .container{
+    display: flex;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid green;
+    width: 100%;
+} */
+/* .main{
+    
+    justify-content: 'center';
+    align-items: 'center';
+    margin: 0 auto;
+    width: 50%;
+    border: 2px solid black;
+   justify-content: center;
+} */
+.login{ 
+    display: block;
+    margin: 0 auto;
+    margin-left: 40%; 
+    margin-top: 100px; 
+}
+
+
+/* Dashboard css */
+
+.health{
+    width: 40%;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    background:burlywood;
+    /* outline: none; */
+    border: none;
+    height: 6vh;
+    margin-top: 40px;
+
+}
+.title1{
+    margin-top: 20px;
+}

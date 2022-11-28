@@ -1,0 +1,37 @@
+
+#div1{
+    width:100%;
+  }
+  #div2{
+    
+    margin: 0 auto;
+    width: 40%;
+    display: block;
+    border: 2px solid black;
+    /* background-image: linear-gradient(360deg,#b8ee72 20%,rgb(244, 189, 87) 80%); */
+    /* background-image: linear-gradient(360deg,lightgreen 20%,rgb(246, 189, 84) 60%); */
+    /* background-image: linear-gradient(360deg,#b7f16c 20%,#9bd4de 50%); */
+    background-color: bisque;
+    border-radius: 15px;
+    margin-top:5em;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+  }
+  #disease{
+    font-size: 50pt;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+  
+  } 
+  #fever{
+    margin: 0,auto;
+    width: fit-content;
+    border: 3px solid black;
+    border-radius: 5%;
+    font-size: 60;
+  }
+  .symtomSelected{
+    border: 5px solid blue;
+    border-spacing: 10px;
+  }

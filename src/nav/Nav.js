@@ -6,7 +6,7 @@ const Navbar = () => {
     const auth = localStorage.getItem('user');
     const logout = () => {
         localStorage.clear();
-        navigate("/signup")
+        navigate("/login");
     }
 
     return (

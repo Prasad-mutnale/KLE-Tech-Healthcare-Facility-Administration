@@ -1,5 +1,68 @@
-/* SIGUP CSS */
-.inputBox {
+/* SIGNUP CSS */
+* {
+    box-sizing: border-box;
+}
+.register{
+    font-family: -webkit-body;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto auto;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 430px;
+}
+.register:before {
+	background-image: url('https://www.vmcdn.ca/f/files/shared/miscellaneous-stock-images/stethoscope-doctor-health.jpg;w=960');
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	display: block;
+	filter: blur(2px);
+}
+
+.register.header-text {
+	font-size: 32px;
+	font-weight: 600;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.register input {
+	margin: 10px 0px;
+	border: none;
+	padding: 5px;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 18px;
+	font-family: -webkit-body;
+}
+.register button {
+	background-color: deepskyblue;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+	padding: 10px;
+	margin: 20px 0px;
+}
+
+/* .inputBox {
     margin: 25px;
     display: block;
     padding: 7px;
@@ -18,7 +81,7 @@
     background-color: #FCA311;
     border: 1px solid;
     cursor: pointer;
-}
+} */
 
 
 /* Login CSS */
@@ -39,27 +102,96 @@
     border: 2px solid black;
    justify-content: center;
 } */
-.login{ 
+/* .login {
     display: block;
     margin: 0 auto;
-    margin-left: 40%; 
-    margin-top: 100px; 
+    margin-left: 40%;
+    margin-top: 100px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: fit-content;
+    border-radius: 20px;
+    text-align: center;
+    font-family: none;
+} */
+* {
+    box-sizing: border-box;
+}
+
+.logbody{
+    font-family: poppins;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: auto auto;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 430px;
+}
+.logbody:before {
+	background-image: url('https://www.vmcdn.ca/f/files/shared/miscellaneous-stock-images/stethoscope-doctor-health.jpg;w=960');
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	display: block;
+	filter: blur(2px);
+}
+.logbody .header-text {
+	font-size: 32px;
+	font-weight: 600;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.logbody input {
+	margin: 10px 0px;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 18px;
+	font-family: poppins;
+}
+.logbody button {
+	background-color: deepskyblue;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+	padding: 10px;
+	margin: 20px 0px;
 }
 
 
 /* Dashboard css */
 
-.health{
+.health {
     width: 40%;
     font-size: 1.3rem;
     border-radius: 15px;
-    background:burlywood;
+    background: burlywood;
     /* outline: none; */
-    border: none;
+    border: 2px solid black;
     height: 6vh;
     margin-top: 40px;
 
 }
-.title1{
+
+.title1 {
     margin-top: 20px;
 }

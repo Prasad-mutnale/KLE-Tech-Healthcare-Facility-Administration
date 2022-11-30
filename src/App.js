@@ -1,17 +1,13 @@
 import React from 'react';
-import { Routes, Route} from 'react-router-dom'
-import Navbar from './nav/Nav';
-import {BrowserRouter} from 'react-router-dom'
-import About from './comp1/About'
-import Home from './comp1/Home'
-import Contact from './comp1/Contact'
-import Footer from './nav/Footer';
-import SignUp from './comp1/SignUp';
-import PrivateComponent from './comp1/PrivateComponent';
-import Logout from './comp1/Logout';
-import Login from './comp1/Login';
-import Dashboard from './comp1/Dashboard';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import About from './comp1/About';
 import Ahealth from './comp1/Ahealth';
+import Contact from './comp1/Contact';
+import Dashboard from './comp1/Dashboard';
+import Home from './comp1/Home';
+import Login from './comp1/Login';
+import SignUp from './comp1/SignUp';
+import Navbar from './nav/Nav';
 
 function App() {
   return (

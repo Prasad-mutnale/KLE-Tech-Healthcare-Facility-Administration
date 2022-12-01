@@ -1,0 +1,21 @@
+
+.health {
+    width: 18em;
+    font-size: 1.3em;
+    border-radius: 15px;
+    background: gray;
+    /* outline: none; */
+    /* border: 2px solid black; */
+    /* height: 6vh; */
+    margin-top: 2em;
+    border: none;
+}
+.health:hover{
+    color: white;
+    /* background-color:#C62128 ; */
+    background-color:#E34234;
+}
+
+.title1 {
+    margin-top: 20px;
+}

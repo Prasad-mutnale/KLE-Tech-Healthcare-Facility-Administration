@@ -1,5 +1,5 @@
 
-#div1{
+ #div1{
     width:100%;
   }
   #div2{
@@ -7,31 +7,28 @@
     margin: 0 auto;
     width: 40%;
     display: block;
-    border: 2px solid black;
-    /* background-image: linear-gradient(360deg,#b8ee72 20%,rgb(244, 189, 87) 80%); */
-    /* background-image: linear-gradient(360deg,lightgreen 20%,rgb(246, 189, 84) 60%); */
-    /* background-image: linear-gradient(360deg,#b7f16c 20%,#9bd4de 50%); */
+    border: 2px solid black; 
     background-color: bisque;
     border-radius: 15px;
     margin-top:5em;
     justify-content: center;
     /* align-items: center; */
-    text-align: center;
-  }
-  #disease{
-    font-size: 50pt;
+    /* text-align: center; */
+   } 
+   #disease{
+    font-size: 50px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: normal;
-  
-  } 
-  #fever{
+
+  }  
+ #fever{
     margin: 0,auto;
     width: fit-content;
     border: 3px solid black;
     border-radius: 5%;
     font-size: 60;
   }
-  .symtomSelected{
+  /* .symtomSelected{
     border: 5px solid blue;
     border-spacing: 10px;
-  }
+  }  */

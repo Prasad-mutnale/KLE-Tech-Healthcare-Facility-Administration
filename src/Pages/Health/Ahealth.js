@@ -5,6 +5,7 @@ import './Ahealthadd.style.css';
 const Ahealth = () => {
   const [symtomSelected,diseases]=useState('')
   return (
+    <>
       <div id="div1">
         <div id="div2">
           <h2 align="center">Health Details</h2>
@@ -40,12 +41,13 @@ const Ahealth = () => {
                 <input type="checkbox" id="mentalhealth" />Anxiety <br />
                 <input type="checkbox" id="mentalhealth" />Bad thoughts <br />
               </div>
-            </form>
+            </form> 
             <center>
               <input type="button" id="submit" value="Submit"/>
             </center>
         </div>
       </div>
+      </>
   )
 };
 

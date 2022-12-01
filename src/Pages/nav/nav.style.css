@@ -1,0 +1,45 @@
+
+
+nav{
+    background-color: white;
+    /* padding: 32px; */
+    overflow:hidden;
+    border-bottom:2px solid #E34234;
+    box-shadow: 0 3px 8px -6px black;
+  }
+  
+  nav a{
+    float: left;
+    color: black;
+    text-align: center;
+    margin-right: 10px;
+    padding: 14px 1rem;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  #top-right {
+    text-align: center;
+    float:right;
+  }
+  
+  
+  
+  nav a.active{
+    text-decoration: none;
+    font-weight: bold;
+  }
+ 
+.img{
+  margin-left: 10px;
+}
+
+.bar1:hover{
+    font-weight: 900;
+    background-color: #E34234;
+    border-width: 10%;
+    border-radius: 10px;
+    /* width: 30%; */
+    color: aliceblue;
+    /* padding-top: 10px ; */
+    margin-top: 2px ;
+}

@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "./nav.style.css"
 import { Link, useNavigate } from "react-router-dom";
+import kle_logo from "./kletech_logo.png"
+
 const Navbar = () => {
     const navigate = useNavigate();
     const auth = localStorage.getItem('user');
@@ -11,9 +13,9 @@ const Navbar = () => {
 
     return (
         <nav>
-            {/* <a href="https://www.google.com">Kle tech logo</a>
+            {/* <a href="https://www.google.com">Kle tech logo  width={"20%"} height={"60%"} </a>
              */}
-            <img src={"https://www.kletech.ac.in/information/img/logo.png"} width={"20%"} height={"60%"}></img>
+            <img className="img" src={kle_logo} width={"20%"} height={"60%"} ></img>
             <div id="top-right">
                 {/* <Link className="bar1" to="/">Home</Link>
                  <Link className="bar1" to="/about">About</Link>
@@ -24,7 +26,7 @@ const Navbar = () => {
                         <Link className="bar1" to="/dashboard">Dashboard</Link>
                         <Link className="bar1" to="/about">About</Link>
                         <Link className="bar1" to="/contact">Contact</Link>
-                        <Link onClick={logout} className="bar1" >Logout</Link>
+                        <Link onClick={logout} className="bar1" to="/login">Logout</Link>
                     {/* <div class="bar1">
                     <button class="dropbtn">Dropdown</button>
                     <div class="dropdown-content">

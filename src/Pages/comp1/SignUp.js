@@ -40,7 +40,7 @@ const SignUp = () => {
             // console.log(Values.name);
             // console.log(Values.usn);
             // console.log(Values.password);
-            let result = await fetch("http://localhost:3000/register",{
+            let result = await fetch("http://localhost:4000/register",{
                 method:"post",
                 headers:{
                   "Content-Type":"application/json",

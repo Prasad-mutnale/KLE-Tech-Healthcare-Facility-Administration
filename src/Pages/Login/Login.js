@@ -28,7 +28,7 @@ const setVal=(event)=>{
     // console.log(Values.usn);
     // console.log(Values.password);
  
-  let result = await fetch('http://localhost:3000/login',{
+  let result = await fetch('http://localhost:4000/login',{
     method:"post",
     body:JSON.stringify({usn:Values.usn,password:Values.password}),
     headers:{

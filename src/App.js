@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import About from './comp1/About';
-import Ahealth from './comp1/Ahealth';
-import Contact from './comp1/Contact';
-import Dashboard from './comp1/Dashboard';
-import Home from './comp1/Home';
-import Login from './comp1/Login';
-import SignUp from './comp1/SignUp';
-import Navbar from './nav/Nav';
+import About from './Pages/About/About';
+import Ahealth from './Pages/Health/Ahealth';
+import Contact from './Pages/Contact/Contact';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import Home from './Pages/Home/Home';
+import Login from './Pages/Login/Login';
+import SignUp from './Pages/comp1/SignUp';
+import Navbar from './Pages/nav/Nav';
 
 function App() {
   return (

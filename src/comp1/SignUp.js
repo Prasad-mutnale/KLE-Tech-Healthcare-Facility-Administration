@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './style.css';
-import { useState,useEffect} from 'react';
-import {useNavigate} from 'react-router-dom';
 
 const SignUp = () => {
 
@@ -41,7 +40,7 @@ const SignUp = () => {
             // console.log(Values.name);
             // console.log(Values.usn);
             // console.log(Values.password);
-            let result = await fetch("http://localhost:4000/register",{
+            let result = await fetch("http://localhost:3000/register",{
                 method:"post",
                 headers:{
                   "Content-Type":"application/json",
@@ -70,9 +69,9 @@ const SignUp = () => {
     <>
     <div className='register'>
         <h1>Register</h1>
-        <input className='inputBox' name="name" type="text" onChange={setVal} placeholder='enter name' value={Values.name}/>
-        <input className='inputBox' name="usn" type="text"  onChange={setVal} placeholder='enter usn id' value={Values.usn} />
-        <input className='inputBox' name="password" type="password"  onChange={setVal} placeholder='enter password' value={Values.password} />
+        <input className='inputBox' name="name" type="text" onChange={setVal} placeholder='Enter Name' value={Values.name}/><br /><br />
+        <input className='inputBox' name="usn" type="text"  onChange={setVal} placeholder='Enter USN id' value={Values.usn} /><br /><br />
+        <input className='inputBox' name="password" type="password"  onChange={setVal} placeholder='Enter Password' value={Values.password} /><br /><br />
         <button  onClick={handleSubmit} className="signup-btn" type='button'>Sign Up</button>
     </div>
 

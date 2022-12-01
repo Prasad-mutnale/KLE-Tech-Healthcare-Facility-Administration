@@ -1,7 +1,7 @@
 
 
 nav{
-    background-color: #FCA311;
+    background-color: skyblue;
     /* padding: 32px; */
     overflow:hidden;
     
@@ -31,7 +31,7 @@ nav{
 
 .bar1:hover{
     font-weight: 900;
-    background-color: rgb(80, 227, 50);
+    background-color: grey;
     border-width: 10%;
     border-radius: 15px;
     color: aliceblue;

@@ -27,7 +27,8 @@ const setVal=(event)=>{
     e.preventDefault();
     // console.log(Values.usn);
     // console.log(Values.password);
-    let result = await fetch('http://localhost:4000/login',{
+ 
+  let result = await fetch('http://localhost:3000/login',{
     method:"post",
     body:JSON.stringify({usn:Values.usn,password:Values.password}),
     headers:{
@@ -40,6 +41,7 @@ console.log(result)
 
 if(result.usn){
     localStorage.setItem("user",JSON.stringify(result));
+    alert("Successfully logged in");
     navigate('/dashboard')
 }else{
     alert("please enter correct details")
@@ -47,15 +49,16 @@ if(result.usn){
   }
     return(
         <>
-        <form>
-        <h3>Login Here</h3>
-        <label className="usnn" for="username">Usn Id</label>
-        <input className='login-input' type="text" name="usn" value={Values.usn} onChange={setVal} placeholder="ENTER USN ID"/>
-        <label className="pasww" for="password">Password(DOB)</label>
-        <input  className='login-input' type="password" name="password"  value={Values.password}  onChange={setVal}placeholder="DD/MM/YYY"/>
-        <button onClick={handleSubmit} className="login-btn" type='button'>Login</button>
-        </form>
-        
+
+      <div className='logbody'>
+      <div className="login">
+            <h2>Login</h2>
+            <input className="inputBox" type="text" name="usn" value={Values.usn} onChange={setVal} placeholder="ENTER USN ID"/><br /><br />
+            <input className="inputBox" type="password" name="password"  value={Values.password}  onChange={setVal}placeholder="ENTER PASSWORD(DOB)"/><br /><br />
+            <button onClick={handleSubmit} className="signup-btn" type='button'>Login</button>
+        </div>
+      </div>
+
     </>
     )
 }

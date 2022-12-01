@@ -1,7 +1,8 @@
 import React from 'react'
-import './style.css'
+// import './style.css'
 import { useState } from 'react';
 import {useNavigate} from 'react-router-dom'
+import './Login.style.css'
 const Login = () => {
 
     const [Values,setdata]=useState({
@@ -48,6 +49,7 @@ if(result.usn){
   }
     return(
         <>
+
       <div className='logbody'>
       <div className="login">
             <h2>Login</h2>
@@ -56,6 +58,7 @@ if(result.usn){
             <button onClick={handleSubmit} className="signup-btn" type='button'>Login</button>
         </div>
       </div>
+
     </>
     )
 }

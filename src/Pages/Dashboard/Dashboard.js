@@ -3,20 +3,23 @@ import './dashboard.css'
 import { useNavigate } from 'react-router';
 
 const Dashboard = () => {
-    const auth = localStorage.getItem('user');
-    const navigate = useNavigate();
-    const addhealth= () => {
-        navigate("/addhealthdetails");
-    }
+  const auth = localStorage.getItem('user');
+  const navigate = useNavigate();
+  const addhealth = () => {
+    navigate("/addhealthdetails");
+  }
 
   return (
     <>
-   <center>
-    <h2 className='title1'>WELCOME TO KLE TECH CLINIC {JSON.parse(auth).name} </h2>
-    <div className='add'> 
-    <button className="health"onClick={addhealth}>Click here to add health details</button>
-    </div>
-    </center>
+      <center>
+        <div id='welcome'>
+          {/* <h2 className='title1'>WELCOME TO KLE TECH CLINIC {JSON.parse(auth).name} </h2> */}
+          <h2 className='title1'>WELCOME TO KLE TECH CLINIC</h2>
+          <div className='add'>
+            <button className="health" onClick={addhealth}>Click here to add health details</button>
+          </div>
+        </div>
+      </center>
     </>
   )
 }

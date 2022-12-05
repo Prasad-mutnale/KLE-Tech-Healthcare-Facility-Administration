@@ -1,10 +1,10 @@
 
 
 nav{
-    background-color: white;
+    /* background-color: gray; */
     /* padding: 32px; */
     overflow:hidden;
-    border-bottom:2px solid #E34234;
+    /* border-bottom:2px solid #E34234; */
     box-shadow: 0 3px 8px -6px black;
   }
   
@@ -35,11 +35,11 @@ nav{
 
 .bar1:hover{
     font-weight: 900;
-    background-color: #E34234;
+    background-color: blue;
     border-width: 10%;
     border-radius: 10px;
     /* width: 30%; */
-    color: aliceblue;
+    color: white;
     /* padding-top: 10px ; */
     margin-top: 2px ;
 }

@@ -21,6 +21,7 @@
 }
 .logbody:before {
 	background-image: url('https://www.vmcdn.ca/f/files/shared/miscellaneous-stock-images/stethoscope-doctor-health.jpg;w=960');
+	/* background-image: url('/src/images/Doctor.jpg'); */
 	width: 100%;
 	height: 100%;
 	background-size: cover;

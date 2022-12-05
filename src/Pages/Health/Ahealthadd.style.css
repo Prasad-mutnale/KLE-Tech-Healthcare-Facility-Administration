@@ -52,7 +52,8 @@
   left: 0;
   right: 0;
   width: 500px;
-  height: 520px;
+  height: 100vh;
+  margin-top: 90px;
 }
 
 #div2:before {

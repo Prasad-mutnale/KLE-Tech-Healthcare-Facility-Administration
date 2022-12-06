@@ -13,6 +13,10 @@ const Verifydetails = () => {
     // console.log(get);
 
     const navigate = useNavigate();
+    const update=()=>{
+      toast.info("Your updated form submitted")
+        navigate('/doctors')
+    }
 
     const edit=()=>{
         navigate('/addhealthdetails');
@@ -36,7 +40,7 @@ const Verifydetails = () => {
         
     }
     </div>
-    <button>Submit</button>
+    <button onClick={update}>Submit</button>
     <button onClick={edit}>Edit Info</button>
     </div>
     </div>

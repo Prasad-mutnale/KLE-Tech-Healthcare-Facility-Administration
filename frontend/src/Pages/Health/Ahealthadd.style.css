@@ -107,6 +107,19 @@
 }
 
 
-
+.product-list ul li{
+  display: inline-block;
+  border: 1px solid skyblue;
+  padding: 5px;
+  width: 150px;
+  }
+  .product-list ul{
+    margin: 0;
+  }
+  .product-list{
+    text-align: center;
+    margin-top: 50px;
+  
+  }
 
 

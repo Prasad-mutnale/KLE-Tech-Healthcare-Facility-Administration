@@ -61,7 +61,7 @@ const Ahealth = () => {
       // localStorage.clear("healthinfo")
       localStorage.setItem("healthinfo",JSON.stringify(result));
       toast.info("Your updated form submitted")
-      navigate('/home')
+      navigate('/doctors')
     }
     else if(result.age){
       localStorage.setItem("healthinfo",JSON.stringify(result));

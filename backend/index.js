@@ -31,6 +31,9 @@ const PORT = 4000;
 
 const User = require("./db/userdetails");
 const HealthSchema = require("./db/healthdetails");
+const DoctorsSchema = require("./db/doctors");
+const AppointmentsSchema = require("./db/appointments");
+
 
 app.post("/register",async(req,res)=>{
     let user =  new User(req.body);
@@ -40,6 +43,17 @@ app.post("/register",async(req,res)=>{
     res.send(result);
 
 })
+app.post("/appointments",async(req,res)=>{
+    let user =  new AppointmentsSchema(req.body);
+    let result = await user.save();
+    result = result.toObject();
+  
+    res.send(result);
+
+})
+
+
+
 
 
 app.post("/login",async(req,res)=>{
@@ -117,6 +131,13 @@ app.post("/add-health",async(req,res)=>{
 app.get('/gethealthdetails',async (req,res)=>{
     let results=await HealthSchema.find();
     res.send(results);
+})
+
+
+
+app.get('/doctors',async (req,res)=>{
+    let result=await DoctorsSchema.find();
+    res.send(result);
 })
 app.listen(PORT, () => {
     console.log(`Server started:${PORT}`);

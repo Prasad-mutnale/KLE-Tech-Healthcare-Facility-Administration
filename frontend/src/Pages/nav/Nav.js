@@ -44,7 +44,7 @@ const Navbar = () => {
                     </div> */}
                     </> : <>
                         <Link className="bar1" to="/">Home</Link>
-                        <Link className="bar1" to="/signup">Sign Up</Link>
+                        {/* <Link className="bar1" to="/signup">Sign Up</Link> */}
                         <Link className="bar1" to="/login">Login</Link>
                        
                     </>

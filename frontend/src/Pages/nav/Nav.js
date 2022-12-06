@@ -2,12 +2,18 @@ import React, { useEffect } from "react";
 import "./nav.style.css"
 import { Link, useNavigate } from "react-router-dom";
 import kle_logo from "./kletech_logo.png"
+import { ToastContainer, toast } from 'react-toastify';
+import { Slide, Zoom, Flip, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Navbar = () => {
     const navigate = useNavigate();
     const auth = localStorage.getItem('user');
     const logout = () => {
         localStorage.clear();
+        toast.success("You have successfully logged out!",{
+            transition:Bounce
+        });
         navigate("/login");
     }
 

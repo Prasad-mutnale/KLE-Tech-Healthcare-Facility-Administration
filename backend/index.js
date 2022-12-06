@@ -112,6 +112,12 @@ app.post("/add-health",async(req,res)=>{
 //         }
 //     })
 // })
+
+
+app.get('/gethealthdetails',async (req,res)=>{
+    let results=await HealthSchema.find();
+    res.send(results);
+})
 app.listen(PORT, () => {
     console.log(`Server started:${PORT}`);
 });

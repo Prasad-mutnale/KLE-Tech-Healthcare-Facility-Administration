@@ -1,0 +1,12 @@
+
+.main{
+    border: 2px solid yellow;
+    margin: 0 auto;
+    width: 100%;
+}
+.main2{
+    border: 2px solid black;
+    width: 50%;
+    margin:auto;
+    margin-top: 30px;
+}

@@ -7,7 +7,8 @@ const HealthDetailsSchema = new mongoose.Schema(
         name:String,
         age:String,
         gender:String,
-        disease:Object
+        disease:String,
+        symptoms:Object
     },
     {
         collection:"healthdetails"

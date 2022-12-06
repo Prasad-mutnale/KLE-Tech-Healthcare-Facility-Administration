@@ -1,5 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { Slide, Zoom, Flip, Bounce } from 'react-toastify';
 import About from './Pages/About/About';
 import Ahealth from './Pages/Health/Ahealth';
 import Contact from './Pages/Contact/Contact';
@@ -8,6 +11,7 @@ import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import SignUp from './Pages/comp1/SignUp';
 import Navbar from './Pages/nav/Nav';
+import Verifydetails from './Pages/Health/Verifydetails';
 
 function App() {
   return (
@@ -28,10 +32,26 @@ function App() {
       <Route path="/login" element={<Login />}></Route>
       <Route path="/dashboard" element={<Dashboard />}></Route>
       <Route path="/addhealthdetails" element={<Ahealth />}></Route>
+      <Route path="/verify" element={<Verifydetails />}></Route>
 
     </Routes>
     </BrowserRouter>
     {/* <Footer/> */}
+    <ToastContainer 
+      position="top-center"
+      autoClose={3000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick={true}
+      rtl={false}
+      pauseOnFocusLoss
+      draggable={true}
+      pauseOnHover
+      theme="colored" 
+      
+      
+      />
+      
     </>
 
   );

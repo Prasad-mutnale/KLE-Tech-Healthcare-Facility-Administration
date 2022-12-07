@@ -12,7 +12,7 @@ import Login from './Pages/Login/Login';
 import SignUp from './Pages/comp1/SignUp';
 import Navbar from './Pages/nav/Nav';
 import Verifydetails from './Pages/Health/Verifydetails';
-
+import Doctors from './Pages/doctors';
 function App() {
   return (
 
@@ -33,6 +33,7 @@ function App() {
       <Route path="/dashboard" element={<Dashboard />}></Route>
       <Route path="/addhealthdetails" element={<Ahealth />}></Route>
       <Route path="/verify" element={<Verifydetails />}></Route>
+      <Route path="/doctors" element={<Doctors />}></Route>
 
     </Routes>
     </BrowserRouter>

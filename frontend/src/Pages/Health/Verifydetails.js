@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react';
 import './Verify.css'
 import { useNavigate } from 'react-router';
+import { ToastContainer, toast } from 'react-toastify';
+
 const Verifydetails = () => {
     const auth = localStorage.getItem("user");
     const get = JSON.parse(localStorage.getItem("healthinfo")).symptoms;
@@ -13,14 +15,44 @@ const Verifydetails = () => {
     // console.log(get);
 
     const navigate = useNavigate();
-    const update=()=>{
-      toast.info("Your updated form submitted")
+    const Submit=async()=>{
+
+      
+        // console.warn()
+        let h=JSON.parse(localStorage.getItem('healthinfo'))
+
+        // let doc={h.usn,h.name,h.age,h.gender,h.disease,get}
+        let doc={h,get}
+        // localStorage.setItem(name);
+        console.warn(doc)
+       
+
+// *************
+  
+        
+        let result = await fetch("http://localhost:4000/submit",
+         {
+          method: "post",
+          body: JSON.stringify(doc),
+          headers: {"Content-Type": "application/json"}
+        });
+        result= await result.json();
+        console.warn(result);
+
+        toast.info("Your appointment submitted")
         navigate('/doctors')
+
+
     }
+
+
+
+
 
     const edit=()=>{
         navigate('/addhealthdetails');
     }
+  
   return (
     <>
     <div className='main'>
@@ -40,7 +72,7 @@ const Verifydetails = () => {
         
     }
     </div>
-    <button onClick={update}>Submit</button>
+    <button onClick={Submit}>Submit</button>
     <button onClick={edit}>Edit Info</button>
     </div>
     </div>

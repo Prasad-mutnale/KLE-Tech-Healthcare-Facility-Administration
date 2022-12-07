@@ -1,6 +1,43 @@
 
 import React, { useState } from 'react';
 import { useEffect} from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import { useNavigate } from "react-router";
+
+
+
+
+function Prod({ind,na,em,qu,sp}){
+let d=JSON.parse(localStorage.getItem('healthinfo')).disease
+
+console.warn(ind)
+if(d==="fever" && na==="prasad"){
+return(<>
+<li>{ind}</li>
+<li>{na}</li>
+<li>{em}</li>
+<li>{qu}</li>
+<li>{sp}</li>
+{/* <li><input  id="check" name="check1" type="radio" onChange={()=>{setName(na);setEmail(em);setQual(qu);setSpec(sp);}} ></input></li> */}
+
+</>);
+}
+else{
+ return(  <>
+ 
+    </>) ;
+}
+
+}
+
+
+
+
+
+
+
+
+
 
 const Doctors=()=>
 {
@@ -9,12 +46,12 @@ const Doctors=()=>
     const [email,setEmail]=useState('');
     const [qual,setQual]=useState('');
     const [spec,setSpec]=useState('');
-
+    
     useEffect(()=>{
         getproducts();
     },[]);
 
- 
+    const navigate = useNavigate();
 
     const getproducts= async ()=>{
         let result =await fetch("http://localhost:4000/doctors",{
@@ -47,14 +84,15 @@ const Doctors=()=>
         result= await result.json();
         console.warn(result);
 
-        toast.info("Your updated form submitted")
-        navigate('/doctors')
+        toast.info("Your appointment submitted")
+        navigate('/dashboard')
 
 
 
 
     }
     return (
+       
         <div className='product-list'>
         <h2>Doctors List</h2>
        
@@ -69,19 +107,22 @@ const Doctors=()=>
 
           
         </ul>
-        {
-          products.length>0?  products.map((item,index)=>
-        <ul>
-            <li>{index+1}</li>
+
+            {/* <li>{index+1}</li>
             <li>{item.name}</li>
 
             <li>{item.email}</li>
             <li>{item.qualification}</li>
-            <li>{item.specialisation}</li>
-            <li><input  id="check" name="check1" type="radio" onChange={()=>{setName(item.name);setEmail(item.email);setQual(item.qualification);setSpec(item.specialisation);}} ></input></li>
+            <li>{item.specialisation}</li> */}
+        {
+          products.length>0?  products.map((item,index)=>
+      
+        <><ul>
+           <Prod ind={index+1} na={item.name} em={item.email} qu={item.qualification} sp={item.specialisation}/>
+            
            
         </ul>
-
+        </>
             )
            
             :

@@ -51,7 +51,14 @@ app.post("/appointments",async(req,res)=>{
     res.send(result);
 
 })
+app.post("/submit",async(req,res)=>{
+    let user =  new HealthSchema(req.body);
+    let result = await user.save();
+    result = result.toObject();
+  
+    res.send(result);
 
+})
 
 
 

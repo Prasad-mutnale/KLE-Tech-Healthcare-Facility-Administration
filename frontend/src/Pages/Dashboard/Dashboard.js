@@ -13,7 +13,7 @@ const Dashboard = () => {
     <>
       <center>
         <div id='welcome'>
-          <h2 className='title1'>WELCOME TO KLE TECH CLINIC {JSON.parse(auth).name} </h2>
+          <h2 className='title1'>WELCOME TO KLE TECH CLINIC ( {JSON.parse(auth).name} )</h2>
           <div className='add'>
             <button className="health" onClick={addhealth}>Click here to add health details</button>
           </div>

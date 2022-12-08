@@ -1,8 +1,4 @@
-* {
-    box-sizing: border-box;
-}
-
-.main2{
+/* .product-list{
     font-family: poppins;
     font-size: 16px;
     color: #fff;
@@ -16,11 +12,10 @@
     bottom: 0;
     left: 0;
     right: 0;
-    margin-top: 10px;
     width: 500px;
-    height: 800px;
-}
-.main2:before {
+    height: 430px;
+} */
+.product-list:before {
 	background-image: url('https://www.vmcdn.ca/f/files/shared/miscellaneous-stock-images/stethoscope-doctor-health.jpg;w=960');
 	/* background-image: url('/src/images/Doctor.jpg'); */
 	width: 100%;
@@ -36,22 +31,22 @@
 	display: block;
 	filter: blur(2px);
 }
-.main2 .header-text {
+/* .product-list.header-text {
 	font-size: 32px;
 	font-weight: 600;
 	padding-bottom: 30px;
 	text-align: center;
+} */
+
+.product-list ul{
+    color: blue;
+    background-color: azure;
+    width: fit-content;
+    margin-left: 14%;
 }
-.input {
-	margin: 10px 0px;
-	border: none;
-	padding: 10px;
-	border-radius: 5px;
-	width: 100%;
-	font-size: 18px;
-	font-family: poppins;
-}
-.main2 button {
+
+
+.product-list button {
 	background-color: deepskyblue;
 	color: #fff;
 	border: none;
@@ -62,3 +57,14 @@
 	padding: 10px;
 	margin: 20px 0px;
 }
+
+.product-list ul li {
+    display: inline-block;
+    border: 1px solid skyblue;
+    padding: 5px;
+    width: 170px;
+}
+
+/* .product-list ul{
+    margin-right: 50px;
+} */

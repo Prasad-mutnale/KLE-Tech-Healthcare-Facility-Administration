@@ -5,7 +5,6 @@ const appointmentsSchema = new mongoose.Schema(
     {
    
         Dname:String,
-        
         email:String,
         Sname:String
       

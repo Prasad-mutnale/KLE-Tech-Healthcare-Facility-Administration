@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useEffect} from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import { useNavigate } from "react-router";
+import './doctor.css'
 
 
 
@@ -11,32 +12,57 @@ function Prod({ind,na,em,qu,sp}){
 let d=JSON.parse(localStorage.getItem('healthinfo')).disease
 
 console.warn(ind)
-if(d==="fever" && na==="prasad"){
+
+const dataradio=(e)=>{
+    console.warn({ind,na,em,qu,sp});
+    
+    const t={name:na,email:em,qualification:qu,specialisation:sp}
+    localStorage.setItem("doctor",JSON.stringify(t));
+
+    
+}
+
+
+
+if(d==="fever" && ((na==="Prasad") ||(na==="sankalp") ||(na==="rahul") ||(na==="ganesh") )){
 return(<>
 <li>{ind}</li>
 <li>{na}</li>
 <li>{em}</li>
 <li>{qu}</li>
 <li>{sp}</li>
+<li><input type="radio" onClick={dataradio}/></li>
+      
 {/* <li><input  id="check" name="check1" type="radio" onChange={()=>{setName(na);setEmail(em);setQual(qu);setSpec(sp);}} ></input></li> */}
 
 </>);
 }
-else{
+else if(d==="mentalhealth"  && ((na==="Sachin") ||(na==="aditya") ||(na==="shashank")  )){
+
  return(  <>
- 
+    <li>{ind}</li>
+<li>{na}</li>
+<li>{em}</li>
+<li>{qu}</li>
+<li>{sp}</li>
+<li><input type="radio" onClick={dataradio}/></li>
+       
     </>) ;
 }
 
+else if(d==="injury" && ((na==="Bharat") ||(na==="sagar")||(na==="gururaj")   )){
+
+    return(  <>
+    <li>{ind}</li>
+    <li>{na}</li>
+    <li>{em}</li>
+    <li>{qu}</li>
+    <li>{sp}</li>
+    <li><input type="radio" onClick={dataradio}/></li>
+       </>) ;
+   }
+
 }
-
-
-
-
-
-
-
-
 
 
 const Doctors=()=>
@@ -46,6 +72,8 @@ const Doctors=()=>
     const [email,setEmail]=useState('');
     const [qual,setQual]=useState('');
     const [spec,setSpec]=useState('');
+    const [d,setD]=useState('');
+    // let mail = JSON.parse("doctor").email;
     
     useEffect(()=>{
         getproducts();
@@ -65,44 +93,32 @@ const Doctors=()=>
     }
     
 
-    const save=async()=>{
-        console.warn(name)
+    // const save=async()=>{
+    //     navigate('/appoint')
+    // }
+
+
+
+        // *********************
+        // console.warn(name)
         let doc={name,email,qual,spec}
         // localStorage.setItem(name);
-        console.warn(doc)
+        // console.warn(doc)
         localStorage.setItem("doctor",JSON.stringify(doc));
 
-// *************
-     let sname= localStorage.getItem('user').name
-        console.warn(name, email,sname);
-        let result = await fetch("http://localhost:4000/appointments",
-         {
-          method: "post",
-          body: JSON.stringify({ name, email, sname}),
-          headers: {"Content-Type": "application/json"}
-        });
-        result= await result.json();
-        console.warn(result);
 
-        toast.info("Your appointment submitted")
-        navigate('/dashboard')
-
-
-
-
-    }
     return (
        
         <div className='product-list'>
         <h2>Doctors List</h2>
        
         <ul >
-            <li>S.No</li>
-            <li>Name</li>
-            <li>Email</li>
-            <li>Qualification</li>
-            <li>Specialisation</li>
-            <li>Select</li>
+            <li><strong>S.No</strong></li>
+            <li><strong>Name</strong></li>
+            <li><strong>Email</strong></li>
+            <li><strong>Qualification</strong></li>
+            <li><strong>Specialisation</strong></li>
+            <li><strong>Select</strong></li>
 
 
           
@@ -128,9 +144,9 @@ const Doctors=()=>
             :
             <h2>No Result Found</h2>
         }
-       
-       <button onClick={save}>Appointment </button>
+               <a href="mailto:bharat@gmail.com"><button> Appointment</button></a>
     </div>
-)
-}
+)};
+
+
 export default Doctors;

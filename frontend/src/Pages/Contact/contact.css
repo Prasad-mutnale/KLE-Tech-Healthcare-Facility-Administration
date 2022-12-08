@@ -1,0 +1,38 @@
+.contactpage{
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.contact-details{
+    margin: 2%;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.contact-details h4{
+    margin: 2%;
+    margin-left: 10%;
+    margin-right: 5%;
+    display: block;
+    font-weight: bolder;
+}
+
+.contact-details h6{
+    margin: 2%;
+    margin-left: 0;
+    margin-right: 5%;
+    display: block;
+    font-weight: bolder;
+}
+
+.sentences{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#lines{
+    color:red;
+}
+
+.abtus h2{
+    font-weight: 900;
+    font-size: 22px;
+}

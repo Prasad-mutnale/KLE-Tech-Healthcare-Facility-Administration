@@ -39,7 +39,7 @@ const Verifydetails = () => {
         result= await result.json();
         console.warn(result);
 
-        toast.info("Your appointment submitted")
+        toast.info("Your appointment data has saved")
         navigate('/doctors')
 
 
@@ -76,10 +76,6 @@ const Verifydetails = () => {
     <button onClick={edit}>Edit Info</button>
     </div>
     </div>
-
-
-
-
     </>
   )
 }

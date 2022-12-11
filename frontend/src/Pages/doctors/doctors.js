@@ -31,7 +31,7 @@ return(<>
 <li>{em}</li>
 <li>{qu}</li>
 <li>{sp}</li>
-<li><input type="radio" onClick={dataradio}/></li>
+<li><input name="radio" type="radio" onClick={dataradio}/></li>
       
 {/* <li><input  id="check" name="check1" type="radio" onChange={()=>{setName(na);setEmail(em);setQual(qu);setSpec(sp);}} ></input></li> */}
 
@@ -45,7 +45,7 @@ else if(d==="mentalhealth"  && ((na==="Sachin") ||(na==="aditya") ||(na==="shash
 <li>{em}</li>
 <li>{qu}</li>
 <li>{sp}</li>
-<li><input type="radio" onClick={dataradio}/></li>
+<li><input name="radio" type="radio" onClick={dataradio}/></li>
        
     </>) ;
 }
@@ -58,7 +58,7 @@ else if(d==="injury" && ((na==="Bharat") ||(na==="sagar")||(na==="gururaj")   ))
     <li>{em}</li>
     <li>{qu}</li>
     <li>{sp}</li>
-    <li><input type="radio" onClick={dataradio}/></li>
+    <li><input  name="radio" type="radio" onClick={dataradio}/></li>
        </>) ;
    }
 

@@ -11,12 +11,12 @@ import './doctor.css'
 function Prod({ind,na,em,qu,sp}){
 let d=JSON.parse(localStorage.getItem('healthinfo')).disease
 
-console.warn(ind)
+console.warn(sp,qu)
 
 const dataradio=(e)=>{
     console.warn({ind,na,em,qu,sp});
     
-    const t={name:na,email:em,qualification:qu,specialisation:sp}
+    const t={name:na,email:em,qualification:qu,Specialisation:sp}
     localStorage.setItem("doctor",JSON.stringify(t));
 
     
@@ -31,7 +31,7 @@ return(<>
 <li>{em}</li>
 <li>{qu}</li>
 <li>{sp}</li>
-<li><input name="radio" type="radio" onClick={dataradio}/></li>
+<li><input  name="radi" type="radio" onClick={dataradio}/></li>
       
 {/* <li><input  id="check" name="check1" type="radio" onChange={()=>{setName(na);setEmail(em);setQual(qu);setSpec(sp);}} ></input></li> */}
 
@@ -45,7 +45,7 @@ else if(d==="mentalhealth"  && ((na==="Sachin") ||(na==="aditya") ||(na==="shash
 <li>{em}</li>
 <li>{qu}</li>
 <li>{sp}</li>
-<li><input name="radio" type="radio" onClick={dataradio}/></li>
+<li><input name="radi" type="radio" onClick={dataradio}/></li>
        
     </>) ;
 }
@@ -58,7 +58,7 @@ else if(d==="injury" && ((na==="Bharat") ||(na==="sagar")||(na==="gururaj")   ))
     <li>{em}</li>
     <li>{qu}</li>
     <li>{sp}</li>
-    <li><input  name="radio" type="radio" onClick={dataradio}/></li>
+    <li><input name="radi" type="radio" onClick={dataradio}/></li>
        </>) ;
    }
 
@@ -135,7 +135,7 @@ const Doctors=()=>
           products.length>0?  products.map((item,index)=>
       
         <><ul>
-           <Prod ind={index+1} na={item.name} em={item.email} qu={item.qualification} sp={item.specialisation}/>
+           <Prod ind={index+1} na={item.name} em={item.email} qu={item.qualification} sp={item.Specialisation}/>
             
            
         </ul>
@@ -145,7 +145,7 @@ const Doctors=()=>
             :
             <h2>No Result Found</h2>
         }
-               <a href="mailto:ganesh@gmail.com"><button> Appointment</button></a>
+               <a href="mailto:debugger1001@gmail.com" id="app123"><button> Appointment</button></a>
     </div>
 )};
 

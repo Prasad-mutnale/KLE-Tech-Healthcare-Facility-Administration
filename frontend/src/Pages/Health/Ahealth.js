@@ -97,7 +97,7 @@ const Ahealth = () => {
             <input type="text" placeholder='Enter your Name' value={JSON.parse(auth).name} /><br/><br/>
 
             <label htmlFor="age" id='age'>Age:</label>
-            <input type="number" placeholder='Age' value={JSON.parse(getHdetailss1).age} onChange={(e)=>{setAge(e.target.value)}}/><br /><br />
+            <input  id="sage" type="number" placeholder='Age' value={JSON.parse(getHdetailss1).age} onChange={(e)=>{setAge(e.target.value)}}/><br /><br />
 
             Gender:<select name="gender" id="gender"  
             value={gender} onChange={(e)=>{setGender(e.target.value)}}>
@@ -151,8 +151,8 @@ const Ahealth = () => {
             {/* <input type="text"  onChange={(e)=>{setName(e.target.value)}}  placeholder='Enter your Name' value={name}/><br/><br/> */}
             <input type="text" placeholder='Enter your Name' value={JSON.parse(auth).name}/><br/><br/>
 
-            <label htmlFor="age" id='age'>Age:</label>
-            <input type="number" placeholder='Age' value={age} onChange={(e)=>{setAge(e.target.value)}}/><br /><br />
+            <label htmlFor="age" >Age:</label>
+            <input type="number"id='age' placeholder='Age' value={age} onChange={(e)=>{setAge(e.target.value)}}/><br /><br />
 
             Gender:<select name="gender" id="gender"  
             value={gender} onChange={(e)=>{setGender(e.target.value)}}>
@@ -187,7 +187,7 @@ const Ahealth = () => {
               </div>
             </form> 
             <center>
-            <input onClick={addHealth} type="button" id="submit" value="Submit"/>
+            <input id="submit" className="but123" onClick={addHealth} type="button"  value="Submit"/>
             </center>
         </div>
       </div>

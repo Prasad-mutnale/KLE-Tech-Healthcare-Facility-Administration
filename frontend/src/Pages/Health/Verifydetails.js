@@ -50,6 +50,7 @@ const Verifydetails = () => {
 
 
     const edit=()=>{
+      console.warn("update");
         navigate('/addhealthdetails');
     }
   
@@ -72,8 +73,8 @@ const Verifydetails = () => {
         
     }
     </div>
-    <button onClick={Submit}>Submit</button>
-    <button onClick={edit}>Edit Info</button>
+    <button id="csubmit" onClick={Submit}>Submit</button>
+    <button id="up12345"  onClick={edit}>Edit Info</button>
     </div>
     </div>
     </>

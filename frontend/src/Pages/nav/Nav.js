@@ -30,9 +30,9 @@ const Navbar = () => {
 
                     auth ? <>
                         <Link className="bar1" to="/dashboard">Dashboard</Link>
-                        <Link className="bar1" to="/about">About</Link>
-                        <Link className="bar1" to="/contact">Contact</Link>
-                        <Link onClick={logout} className="bar1" to="/login">Logout</Link>
+                        <Link className="bar1"id="about123" to="/about">About</Link>
+                        <Link className="bar1"id="contact123" to="/contact">Contact</Link>
+                        <Link onClick={logout} id="logout123"className="bar1" to="/login">Logout</Link>
                     {/* <div class="bar1">
                     <button class="dropbtn">Dropdown</button>
                     <div class="dropdown-content">

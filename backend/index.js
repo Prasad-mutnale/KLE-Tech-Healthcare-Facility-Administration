@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 const express = require('express');
 const cors = require("cors");
 // require("./db/userdetails");
-
-const dbUrl = "mongodb://localhost:27017/clinic"
+mongoose.set('strictQuery', false);
+const dbUrl = "mongodb://127.0.0.1/clinic"
 const connectionParams = {
     useNewUrlParser: true,
     useUnifiedTopology: true

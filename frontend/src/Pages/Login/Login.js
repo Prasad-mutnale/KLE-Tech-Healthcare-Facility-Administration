@@ -73,9 +73,9 @@ const Login = () => {
       <div className='logbody'>
         <div className="login">
           <h2>Login</h2>
-          <input className="inputBox" type="text" name="usn" value={Values.usn} onChange={setVal} placeholder="ENTER USN ID" /><br /><br />
-          <input className="inputBox" type="password" name="password" value={Values.password} onChange={setVal} placeholder="ENTER PASSWORD(DOB)" /><br /><br />
-          <button onClick={handleSubmit} className="signup-btn" type='button'>Login</button>
+          <input className="inputBox" id="logusn" type="text" name="usn" value={Values.usn} onChange={setVal} placeholder="ENTER USN ID" /><br /><br />
+          <input className="inputBox" id="passwd" type="password" name="password" value={Values.password} onChange={setVal} placeholder="ENTER PASSWORD(DOB)" /><br /><br />
+          <button onClick={handleSubmit} id="lobtn" className="signup-btn" type='button'>Login</button>
         </div>
       </div>
     

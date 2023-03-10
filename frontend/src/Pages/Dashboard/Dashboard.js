@@ -15,7 +15,7 @@ const Dashboard = () => {
         <div id='welcome'>
           <h2 className='title1'>WELCOME TO KLE TECH CLINIC ( {JSON.parse(auth).name} )</h2>
           <div className='add'>
-            <button className="health" onClick={addhealth}>Click here to add health details</button>
+            <button id="health123" className="health" onClick={addhealth}>Click here to add health details</button>
           </div>
         </div>
       </center>

@@ -133,7 +133,6 @@ const Doctors=()=>
             <li>{item.specialisation}</li> */}
         {
           products.length>0?  products.map((item,index)=>
-      
         <><ul>
            <Prod ind={index+1} na={item.name} em={item.email} qu={item.qualification} sp={item.Specialisation}/>
             

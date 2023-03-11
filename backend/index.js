@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require("cors");
 // require("./db/userdetails");
 mongoose.set('strictQuery', false);
-const dbUrl = "mongodb://127.0.0.1/clinic"
+const dbUrl = "mongodb+srv://admin:admin@cluster-1.azxdqom.mongodb.net/clinic1"
 const connectionParams = {
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -139,7 +139,6 @@ app.get('/gethealthdetails',async (req,res)=>{
     let results=await HealthSchema.find();
     res.send(results);
 })
-
 
 
 app.get('/doctors',async (req,res)=>{

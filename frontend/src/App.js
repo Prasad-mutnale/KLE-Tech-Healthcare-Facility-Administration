@@ -16,12 +16,10 @@ import Doctors from './Pages/doctors/doctors';
 import Appointment from './Pages/doctors/appoint';
 function App() {
   return (
-
     <>
     <BrowserRouter>
     <Navbar/>
     <Routes>
-
       {/* <Route element={<PrivateComponent/>}> */}
       <Route path="/" element={<Home />}></Route>
       <Route path="/about" element={<About />}></Route>

@@ -30,7 +30,7 @@ const Verifydetails = () => {
 // *************
   
         
-        let result = await fetch("http://localhost:4000/submit",
+        let result = await fetch("http://13.232.165.158:4000/submit",
          {
           method: "post",
           body: JSON.stringify(doc),

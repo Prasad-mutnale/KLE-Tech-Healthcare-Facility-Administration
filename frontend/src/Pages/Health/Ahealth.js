@@ -45,7 +45,7 @@ const Ahealth = () => {
     console.log(usn,name,age,gender)
     console.log(symtomSelected)
     console.log(checkValues.symptoms);
-    let result = await fetch("http://localhost:4000/add-health",{
+    let result = await fetch("http://13.232.165.158:4000/add-health",{
        method:'post',
        body:JSON.stringify({usn,name,age,gender,disease:symtomSelected,symptoms:checkValues.symptoms}),
        headers:{

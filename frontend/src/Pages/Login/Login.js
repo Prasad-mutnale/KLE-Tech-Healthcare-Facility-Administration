@@ -41,7 +41,7 @@ const Login = () => {
     // console.log(Values.usn);
     // console.log(Values.password);
 
-    let result = await fetch('http://localhost:4000/login', {
+    let result = await fetch('http://13.232.165.158:4000/login', {
       method: "post",
       body: JSON.stringify({ usn: Values.usn, password: Values.password }),
       headers: {

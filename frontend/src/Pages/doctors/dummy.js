@@ -82,7 +82,7 @@ const Doctors=()=>
     const navigate = useNavigate();
 
     const getproducts= async ()=>{
-        let result =await fetch("http://localhost:4000/doctors",{
+        let result =await fetch("http://13.232.165.158:4000/doctors",{
             headers:{
                 'Content-Type':'application/json'
                 // authorization:`bearer ${JSON.parse(localStorage.getItem('token'))}`

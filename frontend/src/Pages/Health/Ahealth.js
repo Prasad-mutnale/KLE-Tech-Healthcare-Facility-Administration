@@ -50,6 +50,7 @@ const Ahealth = () => {
        body:JSON.stringify({usn,name,age,gender,disease:symtomSelected,symptoms:checkValues.symptoms}),
        headers:{
         "Content-Type":"application/json"
+        
        }
     });
     result = await result.json();

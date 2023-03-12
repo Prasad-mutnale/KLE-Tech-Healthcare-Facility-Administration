@@ -46,8 +46,7 @@ const Login = () => {
       body: JSON.stringify({ usn: Values.usn, password: Values.password }),
       headers: {
         "Content-Type": "application/json",
-        " Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods":" POST, PUT, PATCH, GET, DELETE, OPTIONS"
+        "Access-Control-Allow-Origin": "*",
       },
     });
     result = await result.json();

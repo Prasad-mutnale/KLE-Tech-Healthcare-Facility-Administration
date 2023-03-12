@@ -84,7 +84,8 @@ const Doctors=()=>
     const getproducts= async ()=>{
         let result =await fetch("http://13.232.165.158:4000/doctors",{
             headers:{
-                'Content-Type':'application/json'
+                'Content-Type':'application/json',
+                "Access-Control-Allow-Origin": "*"
                 // authorization:`bearer ${JSON.parse(localStorage.getItem('token'))}`
             }
         });

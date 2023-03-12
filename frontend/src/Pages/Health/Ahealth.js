@@ -49,8 +49,9 @@ const Ahealth = () => {
        method:'post',
        body:JSON.stringify({usn,name,age,gender,disease:symtomSelected,symptoms:checkValues.symptoms}),
        headers:{
-        "Content-Type":"application/json"
-        
+        "Content-Type":"application/json",
+        "Access-Control-Allow-Origin": "*"
+
        }
     });
     result = await result.json();

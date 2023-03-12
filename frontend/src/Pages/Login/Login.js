@@ -46,7 +46,7 @@ const Login = () => {
       body: JSON.stringify({ usn: Values.usn, password: Values.password }),
       headers: {
         "Content-Type": "application/json",
-        " Access-Control-Allow-Origin": "http://13.232.165.158:4000",
+        " Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods":" POST, PUT, PATCH, GET, DELETE, OPTIONS"
       },
     });

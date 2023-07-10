@@ -71,7 +71,7 @@ To run the project locally, follow these steps:
 1. Start the frontend development server:
 
    ```bash  
-   cd repository-name/frontend
+   cd KLE-Tech-Healthcare-Facility-Administration/frontend
    npm start
 
 3. Open your preferred web browser and visit `http://localhost:3000` to access the frontend.
@@ -82,7 +82,7 @@ To run the project locally, follow these steps:
 1. Start the backend server:
 
    ```bash  
-   cd repository-name/backend
+   cd KLE-Tech-Healthcare-Facility-Administration/backend
    npm start
 
 3. The backend server will start running on `http://localhost:5000`.

@@ -101,3 +101,5 @@ Contributions to this project are welcome! If you would like to contribute, plea
 [![Contributors](https://contrib.rocks/image?repo=Prasad-mutnale/KLE-Tech-Healthcare-Facility-Administration
 )](https://github.com/Prasad-mutnale/KLE-Tech-Healthcare-Facility-Administration/graphs/contributors)
 
+#### Happy coding!
+

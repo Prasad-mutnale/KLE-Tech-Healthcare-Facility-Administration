@@ -1,73 +1,103 @@
+# KLE-Tech-Healthcare-Facility-Administration
 
-<!-- 
-Kle-Tech Healthcare Facility Administration is a web application that allows students of KLE Technological University to access the Kle Tech Healthcare Facility and get medical services from specialist doctors. The project uses MERN stack development and Firebase authentication. The web application has features such as user login, health input, doctor selection, appointment booking, notification, and feedback. The web application aims to provide quality health care to the students and staff of the university in a convenient and efficient way. The web application is developed using agile methodology and tested and deployed using various tools and methods. The web application is evaluated using various metrics and feedback. -->
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The MERN Stack Student Health Portal is a professionally developed website that leverages the power of the MERN (MongoDB, Express.js, React, Node.js) stack technology. This user-friendly portal enables students to log in using their unique SRN (Student Registration Number) and conveniently manage their health-related activities. By inputting their symptoms, students can retrieve their stored details and receive personalized healthcare services.
 
-## Available Scripts
+## Key Features
 
-In the project directory, you can run:
+1. **Intuitive User Interface**: The portal boasts a modern and intuitive interface, designed to enhance user experience and simplify navigation for students.
 
-### `npm start`
+2. **Robust Authentication**: Students can securely log in to the portal using their SRN, ensuring confidentiality and data integrity.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **MongoDB Integration**: The integration of MongoDB, a versatile NoSQL database, ensures efficient storage and retrieval of student details.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **Express.js Framework**: The portal utilizes the Express.js framework, a robust and flexible web application framework, to build the server-side application.
 
-### `npm test`
+5. **React Library**: The dynamic and responsive user interface is constructed using React, a powerful JavaScript library renowned for its efficient UI development capabilities.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+6. **Node.js Runtime Environment**: The portal harnesses the Node.js runtime environment, enabling high-performance execution of server-side code and seamless scalability.
 
-### `npm run build`
+7. **Simplified Symptom Input**: Students can easily input their symptoms through a dedicated form, providing a streamlined process for describing their health concerns.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+8. **Automated Doctor Assignment**: Leveraging the symptom information provided, the portal employs an intelligent algorithm to assign dedicated doctors, ensuring personalized care for each student.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- 9. **Email Notification System**: An integrated email notification system promptly sends appointment confirmations to students, keeping them informed about their scheduled consultations. -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Prerequisites
 
-### `npm run eject`
+Before running the project, please ensure that your system meets the following prerequisites:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Node.js - Version 14.0.0 or higher. To install Node.js, please visit [https://nodejs.org](https://nodejs.org) and follow the installation instructions.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- MongoDB - Version 4.0 or higher. To install MongoDB, please visit [https://www.mongodb.com/try/download/community](https://www.mongodb.com/try/download/community) and follow the provided download and installation instructions.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To install the frontend and backend components of the project, follow these steps:
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Frontend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository:
 
-### Code Splitting
+   ```bash
+   git clone https://github.com/Prasad-mutnale/KLE-Tech-Healthcare-Facility-Administration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Navigate to the frontend directory:
 
-### Analyzing the Bundle Size
+   ```bash
+   cd KLE-Tech-Healthcare-Facility-Administration/frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. Install the frontend dependencies:
 
-### Making a Progressive Web App
+   ```bash
+       npm install 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Backend
 
-### Advanced Configuration
+1. Navigate to the backend directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```bash
+   cd KLE-Tech-Healthcare-Facility-Administration/backend
+3. Install the frontend dependencies:
 
-### Deployment
+   ```bash
+   npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Usage
+To run the project locally, follow these steps:
 
-### `npm run build` fails to minify
+### Frontend
+1. Start the frontend development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash  
+   cd repository-name/frontend
+   npm start
+
+3. Open your preferred web browser and visit `http://localhost:3000` to access the frontend.
+
+
+
+### Backend
+1. Start the backend server:
+
+   ```bash  
+   cd repository-name/backend
+   npm start
+
+3. The backend server will start running on `http://localhost:5000`.
+
+
+<!-- ## Contributing
+Contributions to this project are welcome! If you would like to contribute, please follow these guidelines:
+
+1. Fork the repository to your GitHub account.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes and push the branch to your fork.
+4. Submit a pull request, explaining the changes you've made and the rationale behind them. -->
+
+
+#### Thanks to my team for contributing to this project.
+[![Contributors](https://contrib.rocks/image?repo=Prasad-mutnale/KLE-Tech-Healthcare-Facility-Administration
+)](https://github.com/Prasad-mutnale/KLE-Tech-Healthcare-Facility-Administration/graphs/contributors)
+
